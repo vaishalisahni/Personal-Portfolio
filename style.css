@@ -120,8 +120,13 @@ nav a:hover{
     /* height: 25vh; */
     border-radius: 50%;
     aspect-ratio: 1;
-    background-color: #D9D9D9;
+    background-color: #F37021;
     transition: all 0.3s ease-in-out;
+}
+.hero .image img{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
 }
 .hero .image:hover{
   transform: scale(1.1) translateZ(20px);
