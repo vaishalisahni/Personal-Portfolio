@@ -14,15 +14,12 @@ header{
     padding: 30px;
     font-weight: 300;
     flex-wrap: wrap;
+    position: fixed;
     /* border: solid 1px rgb(14, 13, 13); */
 }
-main{
-  background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
-}
-.section{
-  background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
-}
+
 /* nav */
+
 nav, nav ul{
     display: flex;
     justify-content: center;
@@ -108,13 +105,18 @@ nav a:hover{
     width: 60%;
 }
 
-.image{
+.hero .image{
     padding: 10px;
     width: 400px;
     height: 400px;
     border-radius: 50%;
     aspect-ratio: 1;
     background-color: #D9D9D9;
+    transition: all 0.3s ease-in-out;
+}
+.hero .image:hover{
+  transform: scale(1.1) translateZ(20px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Skills */
@@ -165,7 +167,13 @@ nav a:hover{
     padding: 8px 10px;
     border: 2px #f37021 solid;
     border-radius: 7px;
+    transition: all 0.3s ease-in-out;
 }
+.skill:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 
 .skill img{
@@ -198,6 +206,11 @@ nav a:hover{
     border: none;
     margin-block: 30px;
     font-size: larger;
+    transition: all 0.3s ease-in-out;
+}
+.linkedin:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .linkedin a{
     text-decoration: none;
@@ -221,6 +234,12 @@ nav a:hover{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+#certifications .card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 #certifications .card-image {
@@ -243,9 +262,8 @@ nav a:hover{
 }
 
 #certifications  .project-title {
-  font-weight: bold; /* font-bold */
-  font-size: 1.125rem; /* text-lg */
-  margin-top: 32px; /* mt-8 */
+  font-weight: bold; 
+  font-size: 1.125rem; 
 }
 
 #certifications .card-content .description {
@@ -285,28 +303,43 @@ nav a:hover{
   padding: 20px;
   text-align: left;
   gap: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-link {
   text-decoration: none;
+}
+.project-link:hover{
+  text-decoration: underline;
 }
 
 .project-card img {
   width: 100%;
   border-radius: 10px;
 }
-
+.project-details{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
 .project-details a{
   color: #000;
 }
 .project-details span{
   /* font-weight: bold; */
-  color: #F37021;
+  /* color: #F37021; */
+  /* font-size: large; */
+  font-style: italic;
 }
 .project-details ul{
   list-style: disc;
-  padding: 15px;
+  padding-inline:  15px;
 }
 
 /* Education */
@@ -335,7 +368,14 @@ nav a:hover{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
+
+.education-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .education-card div{
   display: flex;
   flex-direction: column;
@@ -388,8 +428,11 @@ nav a:hover{
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-btn:hover {
   background: #ce611d;
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
