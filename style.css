@@ -16,7 +16,7 @@ header{
     /* border: solid 1px rgb(14, 13, 13); */
 }
 main{
-  background-color: linear-gradient(to right, #fef5e5,white, #e5e6fe);
+  background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
 }
 .section{
   background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
@@ -239,6 +239,7 @@ nav a:hover{
 #projects {
   text-align: center;
   padding: 60px 20px;
+  background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
 }
 
 .projects-container {
@@ -274,6 +275,7 @@ nav a:hover{
 #education {
   text-align: center;
   padding: 60px 20px;
+  background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
 }
 
 .education-container {
@@ -285,11 +287,32 @@ nav a:hover{
 }
 
 .education-card {
+  display: flex;
+  flex-direction: row;
   background: white;
-  width: 250px;
+  /* width: 250px; */
   padding: 20px;
   border-radius: 10px;
+  text-align: left;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  justify-content: space-between;
+}
+.education-card div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.education-card img{
+  width: 116px;
+  height: 116px;
+  aspect-ratio: 1;
+  /* border-radius: 50%; */
+}
+
+.education-card span{
+  color: #F37021;
+  font-size: larger;
 }
 
 
