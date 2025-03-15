@@ -13,8 +13,12 @@ header{
     color: #f2f2f2;
     padding: 30px;
     font-weight: 300;
-    flex-wrap: wrap;
-    position: fixed;
+    flex-wrap: wrap-reverse;
+    position: fixed;  
+    /* top: 0;
+    left: 0; */
+    text-align: center;
+    /* z-index: 100; */
     /* border: solid 1px rgb(14, 13, 13); */
 }
 
@@ -71,6 +75,8 @@ nav a:hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    /* margin-top: 60px; */
+    /* height: 100%; */
 }
 .hero .details{
     display: flex;
@@ -79,6 +85,7 @@ nav a:hover{
     gap: 15px;
     width: 70%;
     color:white !important;
+    /* margin-top: 60px; */
 }
 
 .hero .details h1{
@@ -90,6 +97,7 @@ nav a:hover{
 }
 
 .hero .details h3{
+  display: flex;
     font-size: 30px;
     font-weight: 500;
 }
@@ -103,12 +111,13 @@ nav a:hover{
     font-size: 22px;
     color : #f2f2f2;
     width: 60%;
+    /* text-align: center; */
 }
 
 .hero .image{
     padding: 10px;
-    width: 400px;
-    height: 400px;
+    width: 25dvw;
+    /* height: 25vh; */
     border-radius: 50%;
     aspect-ratio: 1;
     background-color: #D9D9D9;
@@ -191,6 +200,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   text-align: center;
   padding: 60px 20px;
@@ -219,6 +229,7 @@ nav a:hover{
 #certifications .cards-container{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -277,6 +288,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   text-align: center;
   padding: 60px 20px;
@@ -344,6 +356,10 @@ nav a:hover{
 
 /* Education */
 #education {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  justify-content: center;
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(to right, #fef5e5,white, #e5e6fe);
@@ -352,9 +368,11 @@ nav a:hover{
 .education-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
+  flex-grow: 1;
 }
 
 .education-card {
@@ -366,7 +384,7 @@ nav a:hover{
   border-radius: 10px;
   text-align: left;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1;
+  flex-grow: 1;
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
@@ -435,4 +453,160 @@ nav a:hover{
   background: #ce611d;
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Media Queries for Responsiveness */
+
+/* For devices like tablets */
+@media screen and (max-width: 1024px) {
+  header {
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  nav {
+      gap: 30px;
+  }
+
+  .hero {
+    /* margin-top: 70px; */
+      padding: 80px 40px;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .hero .details {
+    margin-top: 80px;
+      width: 100%;
+      text-align: center;
+  }
+  .hero .details .description{
+    text-align: center;
+    align-self: center;
+  }
+
+  .hero .image {
+      width: 300px;
+      height: 300px;
+  }
+
+  #skills {
+      padding: 50px 40px;
+  }
+
+  #certifications {
+      padding: 50px 20px;
+  }
+
+  .projects-container, .education-container, .contact-container {
+      flex-direction: column;
+  }
+
+  .project-card, .education-card {
+      width: 80%;
+      margin: 10px 0;
+  }
+  #contact .contact-container{
+    /* display: inline; */
+    flex-direction: row;
+  }
+}
+
+
+/* For devices like mobile phones */
+@media screen and (max-width: 768px) {
+  header {
+      padding: 15px;
+  }
+
+  nav {
+      gap: 20px;
+  }
+
+  .hero {
+      padding: 60px 30px;
+      flex-direction: column;
+      text-align: center;
+  }
+  .hero .details{
+    margin-top: 200px;
+  }
+  .hero .details h1 {
+      font-size: 30px;
+  }
+
+  .hero .details h2 {
+      font-size: 28px;
+  }
+
+  .hero .description {
+      font-size: 20px;
+      width: 100%;
+  }
+
+  .hero .image {
+      width: 250px;
+      height: 250px;
+  }
+
+  #skills {
+      padding: 40px 30px;
+  }
+
+  #certifications {
+      padding: 40px 20px;
+  }
+
+  .projects-container, .education-container, .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-card, .education-card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .contact-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
+
+/* For smaller mobile screens */
+@media screen and (max-width: 480px) {
+  .hero {
+      padding: 40px 20px;
+  }
+  .hero .details{
+    margin-top: 1000dvh;
+  }
+  .hero .details h1 {
+      font-size: 24px;
+  }
+
+  .hero .details h2 {
+      font-size: 22px;
+  }
+
+  .hero .image {
+      width: 200px;
+      height: 200px;
+  }
+
+  .title {
+      font-size: 30px;
+  }
+
+  .description {
+      font-size: 18px;
+  }
+
+  .project-card, .education-card {
+      width: 90%;
+  }
+
+  .contact-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
 }
