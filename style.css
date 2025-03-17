@@ -527,7 +527,7 @@ nav a:hover{
   }
 
   .hero .details {
-    margin-top: 80px;
+    margin-top: 6rem;
       width: 100%;
       text-align: center;
   }
@@ -542,12 +542,19 @@ nav a:hover{
   }
 
   #skills {
-    padding-top: 80px;
+    
       padding: 50px 40px;
+      padding-top: 12rem;
   }
 
   #certifications {
       padding: 50px 20px;
+      padding-top: 12rem;
+
+  }
+  #projects, #education{
+    padding-top: 12rem;
+
   }
 
   .projects-container, .education-container, .contact-container {
@@ -600,7 +607,7 @@ nav a:hover{
       text-align: center;
   }
   .hero .details{
-    margin-top: 200px;
+    margin-top: 8rem;
   }
   .hero .details h1 {
       font-size: 30px;
@@ -621,9 +628,11 @@ nav a:hover{
   }
 
   #skills {
-    padding-top: 200px;
+    
       padding: 40px 30px;
+      padding-top: 12rem;
   }
+ 
 
   #certifications {
       padding: 40px 20px;
@@ -642,6 +651,9 @@ nav a:hover{
   .contact-btn {
       padding: 8px 16px;
       font-size: 14px;
+  }
+  #certifications, #education, #projects{
+    padding-top: 12rem;
   }
 }
 
@@ -670,7 +682,7 @@ nav a:hover{
       padding: 40px 20px;
   }
   .hero .details{
-    margin-top: 55%;
+    margin-top: 10rem;
   }
   .hero .details h1 {
       font-size: 24px;
@@ -692,8 +704,8 @@ nav a:hover{
   .description {
       font-size: 18px;
   }
-  #skill{
-    padding-top: 500px;
+  #skill , #certifications, #projects, #education{
+    padding-top: 14rem;
   }
 
   .project-card, .education-card {
