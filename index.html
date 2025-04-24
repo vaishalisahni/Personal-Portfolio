@@ -4,164 +4,188 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Vaishali Sahni | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
     <header>
         <div class="branding">
-            <img src="assets/vaishali.jpg" alt="img" class="brand-image" />
+            <img src="assets/vaishali.jpg" alt="Vaishali Sahni" class="brand-image" />
             <span><a href="#home">vaishali.sahni</a></span>
         </div>
         <div>
             <nav>
                 <ul>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certifications">Certifications & Training</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle">🌙</button></li>
                 </ul>
                 <button class="resume-btn">
                     <a href="https://drive.google.com/file/d/1EohqcHQe8QiBhokS0h9_vKeRnw7ojpl5/view?usp=sharing"
                         target="_blank">Resume</a>
                 </button>
             </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1EohqcHQe8QiBhokS0h9_vKeRnw7ojpl5/view?usp=sharing"
+                target="_blank">Resume</a></li>
+        </ul>
+    </div>
+
     <main>
         <section class="hero" id="home">
             <div class="details">
-                <h2>Hello, I'm</h2>
-                <h1>Vaishali Sahni</h1>
-                <h3>A passionate undergraduate at Shivalik College of Engineering</h3>
-                <p class="description">
-                    I am a passionate software developer, currently in 3rd year of
-                    engineering.
-                </p>
+                <div class="animate-on-scroll">
+                    <h2>Hello, I'm</h2>
+                    <h1>Vaishali Sahni</h1>
+                    <h3 class="typing-text" data-text="A passionate undergraduate at Shivalik College of Engineering">A passionate undergraduate at Shivalik College of Engineering</h3>
+                    <p class="description">
+                        I am a passionate software developer, currently in 3rd year of
+                        engineering.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/vaishali-sahni-28v/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vaishalisahni" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:vaishalisahni10@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="image">
-                <img src="assets/vaishali.jpg" alt="">
+            <div class="image animate-on-scroll">
+                <img src="assets/vaishali.jpg" alt="Vaishali Sahni">
             </div>
         </section>
+
         <section class="section" id="skills">
-            <h2 class="title">My <span>Skills</span></h2>
-            <p class="description">
+            <h2 class="title animate-on-scroll">My <span>Skills</span></h2>
+            <p class="description animate-on-scroll">
                 Here are some of my skills on which I have been working on for the
                 past 2 years.
             </p>
 
-            <div class="skill-container">
+            <div class="skill-container animate-on-scroll">
                 <div class="skill">
-                    <img src="assets/c.jpeg" alt="" />
+                    <img src="assets/c.jpeg" alt="C Programming" />
                     <span>C</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/c++.png" alt="" />
+                    <img src="assets/c++.png" alt="C++ Programming" />
                     <span>C++</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/java.png" alt="" />
+                    <img src="assets/java.png" alt="Java Programming" />
                     <span>Java</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/python.png" alt="" />
+                    <img src="assets/python.png" alt="Python Programming" />
                     <span>Python</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/data-structures.jpeg" alt="" />
+                    <img src="assets/data-structures.jpeg" alt="Data Structures" />
                     <span>Data Structures</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/algo.png" alt="" />
+                    <img src="assets/algo.png" alt="Algorithms" />
                     <span>Algorithms</span>
                 </div>
                 
                 <div class="skill">
-                    <img src="assets/html.svg" alt="" />
+                    <img src="assets/html.svg" alt="HTML" />
                     <span>HTML</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/CSS.svg" alt="" />
+                    <img src="assets/CSS.svg" alt="CSS" />
                     <span>CSS</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/tailwind-css.png" alt="" />
+                    <img src="assets/tailwind-css.png" alt="Tailwind CSS" />
                     <span>Tailwind CSS</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/javascript.svg" alt="" />
+                    <img src="assets/javascript.svg" alt="Javascript" />
                     <span>Javascript</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/react.svg" alt="" />
+                    <img src="assets/react.svg" alt="React" />
                     <span>React</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/redux.jpeg" alt="" />
+                    <img src="assets/redux.jpeg" alt="Redux" />
                     <span>Redux</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/nodejs.svg" alt="" />
+                    <img src="assets/nodejs.svg" alt="Node.Js" />
                     <span>Node.Js</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/express.jpeg" alt="" />
+                    <img src="assets/express.jpeg" alt="Express.Js" />
                     <span>Express.Js</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/mongodb.svg" alt="" />
+                    <img src="assets/mongodb.svg" alt="MongoDB" />
                     <span>MongoDB</span>
                 </div>
-
                 <div class="skill">
-                    <img src="assets/sql.svg" alt="" />
-                    <span>SQl</span>
+                    <img src="assets/sql.svg" alt="SQL" />
+                    <span>SQL</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/api.svg" alt="" />
+                    <img src="assets/api.svg" alt="API" />
                     <span>API</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/git.jpeg" alt="" />
+                    <img src="assets/git.jpeg" alt="Git" />
                     <span>Git</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/DS.svg" alt="" />
+                    <img src="assets/DS.svg" alt="Data Science" />
                     <span>Data Science</span>
                 </div>
                 <div class="skill">
-                    <img src="assets/ML.svg" alt="" />
+                    <img src="assets/ML.svg" alt="Machine Learning" />
                     <span>Machine Learning</span>
                 </div>
-                
-                
-                
             </div>
         </section>
 
         <section class="section" id="certifications">
-            <h2 class="title">My <span>Certifications & Training</span></h2>
-            <p class="description">
+            <h2 class="title animate-on-scroll">My <span>Certifications & Training</span></h2>
+            <p class="description animate-on-scroll">
                 Here is a quick demo of my certifications and training showcasing my
                 learning journey!
             </p>
-            <button class="linkedin">
-                <a href="https://www.linkedin.com/in/vaishali-sahni-28v/" target="_blank">Visit my Linkedin</a>
+            <button class="linkedin animate-on-scroll">
+                <a href="https://www.linkedin.com/in/vaishali-sahni-28v/" target="_blank">
+                    <i class="fab fa-linkedin"></i> Visit my LinkedIn
+                </a>
             </button>
-            <div class="cards-container">
-                <div class="card ">
+            <div class="cards-container" id="certifications-carousel">
+                <div class="card animate-on-scroll">
                     <div class="card-image">
-                        <img src="assets/placement-training.jpeg" alt="Project Image" class="project-img" />
+                        <img src="assets/placement-training.jpeg" alt="Placement Training" class="project-img" />
                     </div>
                     <div class="card-content">
-                        <h3 class="project-title ">
+                        <h3 class="project-title">
                             <a href="https://www.linkedin.com/posts/vaishali-sahni-28v_explorinacademy-datastructures-algorithms-activity-7237319974434828290-krDp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2tliUBaS01NqVCEQ_FuOUHd04qMHS2TTs" target="_blank">Explorin Academy | Placement Training</a>
                         </h3>
                         <p class="description">
@@ -173,13 +197,13 @@
                     </div>
                 </div>
 
-                <div class="card ">
-                    <div class="card-image ">
-                        <img src="assets/internshala.png" alt="Project Image" class="project-img" />
+                <div class="card animate-on-scroll">
+                    <div class="card-image">
+                        <img src="assets/internshala.png" alt="Internshala Training" class="project-img" />
                     </div>
                     <div class="card-content">
-                        <h3 class="project-title font-bold text-lg mt-8">
-                            <a href="https://www.linkedin.com/posts/vaishali-sahni-28v_successfully-completed-the-web-development-activity-7090728896567906305-n6rL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2tliUBaS01NqVCEQ_FuOUHd04qMHS2TTs">Internshala Trainings | Web Development</a>
+                        <h3 class="project-title">
+                            <a href="https://www.linkedin.com/posts/vaishali-sahni-28v_successfully-completed-the-web-development-activity-7090728896567906305-n6rL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2tliUBaS01NqVCEQ_FuOUHd04qMHS2TTs" target="_blank">Internshala Trainings | Web Development</a>
                         </h3>
                         <p class="description">
                             Successfully completed an extensive web development training program covering HTML, CSS,
@@ -189,13 +213,13 @@
                     </div>
                 </div>
 
-                <div class="card ">
-                    <div class="card-image ">
-                        <img src="assets/robotics.jpeg" alt="Project Image" class="project-img" />
+                <div class="card animate-on-scroll">
+                    <div class="card-image">
+                        <img src="assets/robotics.jpeg" alt="Robotics Training" class="project-img" />
                     </div>
                     <div class="card-content">
-                        <h3 class="project-title font-bold text-lg mt-8">
-                            <a href="https://www.linkedin.com/posts/vaishali-sahni-28v_im-happy-to-share-that-ive-obtained-a-new-activity-7063051156549173248-rpDZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2tliUBaS01NqVCEQ_FuOUHd04qMHS2TTs">Verzeo | Robotics</a>
+                        <h3 class="project-title">
+                            <a href="https://www.linkedin.com/posts/vaishali-sahni-28v_im-happy-to-share-that-ive-obtained-a-new-activity-7063051156549173248-rpDZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2tliUBaS01NqVCEQ_FuOUHd04qMHS2TTs" target="_blank">Verzeo | Robotics</a>
                         </h3>
                         <p class="description">
                             Successfully completed an in-depth robotics training program, gaining expertise in
@@ -209,22 +233,41 @@
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2 class="title">My <span>Projects</span></h2>
-            <p class="description">
+            <h2 class="title animate-on-scroll">My <span>Projects</span></h2>
+            <p class="description animate-on-scroll">
                 I have worked on a wide range of projects. Here are some of my
                 projects.
             </p>
-            <button class="linkedin">
-                <a href="https://github.com/vaishalisahni" target="_blank">Visit my GitHub</a>
+            
+            <div class="filter-container animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            </div>
+            
+            <button class="linkedin animate-on-scroll">
+                <a href="https://github.com/vaishalisahni" target="_blank">
+                    <i class="fab fa-github"></i> Visit my GitHub
+                </a>
             </button>
+            
             <div class="projects-container">
-                <div class="project-card">
-                    <img src="./assets/amazon.png" alt="Project Image" class="project-img" />
+                <div class="project-card animate-on-scroll web">
+                    <div class="project-image">
+                        <img src="./assets/amazon.png" alt="Amazon Clone Project" class="project-img" />
+                        <div class="project-links">
+                            <a href="https://amazon-clone-seven-lac.vercel.app/" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="https://github.com/vaishalisahni/amazon-clone" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-details">
                         <h3>
-                            <a class="project-link" href="https://amazon-clone-seven-lac.vercel.app/"
-                                target="_blank">Amazon Clone
-                            </a>
+                            <a class="project-link" href="https://amazon-clone-seven-lac.vercel.app/" target="_blank">Amazon Clone</a>
                         </h3>
                         <span>HTML, CSS, JavaScript, React</span>
                         <ul>
@@ -240,12 +283,21 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="./assets/todo.png" alt="Project Image" class="project-img" />
+                <div class="project-card animate-on-scroll web">
+                    <div class="project-image">
+                        <img src="./assets/todo.png" alt="To-Do App Project" class="project-img" />
+                        <div class="project-links">
+                            <a href="https://vaishalisahni.github.io/ToDo-List-App/" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="https://github.com/vaishalisahni/ToDo-List-App" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-details">
                         <h3>
-                            <a class="project-link" href="https://vaishalisahni.github.io/ToDo-List-App/"
-                                target="_blank">To-Do App</a>
+                            <a class="project-link" href="https://vaishalisahni.github.io/ToDo-List-App/" target="_blank">To-Do App</a>
                         </h3>
                         <span>HTML, CSS, JavaScript, Local Storage</span>
                         <ul>
@@ -264,12 +316,21 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="./assets/Quiz.png" alt="Project Image" class="project-img" />
+                <div class="project-card animate-on-scroll web">
+                    <div class="project-image">
+                        <img src="./assets/Quiz.png" alt="Quiz App Project" class="project-img" />
+                        <div class="project-links">
+                            <a href="https://vaishalisahni.github.io/QuizApp/" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="https://github.com/vaishalisahni/QuizApp" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-details">
                         <h3>
-                            <a class="project-link" href="https://vaishalisahni.github.io/QuizApp/" target="_blank">Quiz
-                                App</a>
+                            <a class="project-link" href="https://vaishalisahni.github.io/QuizApp/" target="_blank">Quiz App</a>
                         </h3>
                         <span>HTML, CSS, JavaScript</span>
                         <ul>
@@ -288,59 +349,209 @@
                         </ul>
                     </div>
                 </div>
+                
+                <!-- Hidden projects (initially) -->
+                <div class="project-card animate-on-scroll app hidden-project">
+                    <div class="project-image">
+                        <img src="./assets/calculator.png" alt="Calculator App" class="project-img" />
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>
+                            <a class="project-link" href="#" target="_blank">Calculator App</a>
+                        </h3>
+                        <span>HTML, CSS, JavaScript</span>
+                        <ul>
+                            <li>
+                                Built a fully functional calculator with basic and scientific operations.
+                            </li>
+                            <li>
+                                Implemented responsive design for mobile and desktop users.
+                            </li>
+                            <li>
+                                Added keyboard support for better accessibility.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll ml hidden-project">
+                    <div class="project-image">
+                        <img src="./assets/sentiment.png" alt="Sentiment Analysis" class="project-img" />
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>
+                            <a class="project-link" href="#" target="_blank">Sentiment Analysis</a>
+                        </h3>
+                        <span>Python, NLTK, Flask</span>
+                        <ul>
+                            <li>
+                                Developed a machine learning model to analyze sentiment in text.
+                            </li>
+                            <li>
+                                Built a web interface using Flask to demonstrate the model.
+                            </li>
+                            <li>
+                                Achieved 87% accuracy on test datasets.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll web hidden-project">
+                    <div class="project-image">
+                        <img src="./assets/weather.png" alt="Weather App" class="project-img" />
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                            <a href="#" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>
+                            <a class="project-link" href="#" target="_blank">Weather App</a>
+                        </h3>
+                        <span>React, API Integration, CSS</span>
+                        <ul>
+                            <li>
+                                Created a weather application that fetches real-time data.
+                            </li>
+                            <li>
+                                Implemented geolocation to automatically detect user's location.
+                            </li>
+                            <li>
+                                Added 5-day forecast visualization with interactive charts.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-
+            
+            <button id="load-more" class="load-more-btn animate-on-scroll">
+                Show More Projects <i class="fas fa-chevron-down"></i>
+            </button>
         </section>
 
         <section id="education">
-            <h2 class="title"><span>Education</span></h2>
-            <p class="description">
+            <h2 class="title animate-on-scroll"><span>Education</span></h2>
+            <p class="description animate-on-scroll">
                 My education has been a journey of self-discovery and growth. Here are
                 some details.
             </p>
             <div class="education-container">
-                <div class="education-card">
+                <div class="education-card animate-on-scroll">
                     <div>
                         <h3>Shivalik College of Engineering</h3>
-                        <span>2022-2026 </span>
+                        <span>2022-2026</span>
                         <p>BTech | Computer Science</p>
+                        <div class="education-details">
+                            <p>CGPA: 9.2/10</p>
+                            <p>Relevant coursework: Data Structures, Algorithms, Database Management, Web Development</p>
+                        </div>
                     </div>
-                    <img src="assets/shivalik.jpeg" alt="" class="shivalik" />
+                    <img src="assets/shivalik.jpeg" alt="Shivalik College" class="shivalik" />
                 </div>
 
-                <div class="education-card">
+                <div class="education-card animate-on-scroll">
                     <div>
                         <h3>Carman School</h3>
                         <span>2021-2022</span>
                         <p>12th | ISC</p>
+                        <div class="education-details">
+                            <p>Percentage: 94%</p>
+                            <p>Subjects: Mathematics, Physics, Chemistry, Computer Science</p>
+                        </div>
                     </div>
-                    <img src="assets/carman.png" alt="" />
+                    <img src="assets/carman.png" alt="Carman School" />
                 </div>
 
-                <div class="education-card">
+                <div class="education-card animate-on-scroll">
                     <div>
                         <h3>Carman School</h3>
-                        <span>2019-2020 </span>
+                        <span>2019-2020</span>
                         <p>10th | ICSE</p>
+                        <div class="education-details">
+                            <p>Percentage: 96%</p>
+                            <p>Achieved school rank 2 in board examinations</p>
+                        </div>
                     </div>
-                    <img src="assets/carman.png" alt="" />
+                    <img src="assets/carman.png" alt="Carman School" />
                 </div>
             </div>
         </section>
+        
         <section id="contact">
-            <h2 class="footer-title">Contact</h2>
-            <p class="footer-description">
+            <h2 class="footer-title animate-on-scroll">Contact</h2>
+            <p class="footer-description animate-on-scroll">
                 Feel free to reach out to me for any questions or opportunities!
             </p>
-            <div class="contact-container">
-                <a href="https://www.linkedin.com/in/vaishali-sahni-28v/" class="contact-btn" target="_blank">LinkedIn</a>
-                <a href="mailto:vaishalisahni10@gmail.com" class="contact-btn" target="_blank">vaishalisahni10@gmail.com</a>
-                <a href="https://github.com/vaishalisahni" class="contact-btn" target="_blank">GitHub</a>
-                <a href="tel:+919456790079" class="contact-btn" target="_blank">+919456790079</a>
+            
+            <div class="contact-form-container animate-on-scroll">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <p id="name-error" class="error-message">Please enter your name</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <p id="email-error" class="error-message">Please enter a valid email</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <p id="message-error" class="error-message">Please enter your message</p>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-container animate-on-scroll">
+                <a href="https://www.linkedin.com/in/vaishali-sahni-28v/" class="contact-btn" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:vaishalisahni10@gmail.com" class="contact-btn" target="_blank">
+                    <i class="fas fa-envelope"></i> vaishalisahni10@gmail.com
+                </a>
+                <a href="https://github.com/vaishalisahni" class="contact-btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="tel:+919456790079" class="contact-btn" target="_blank">
+                    <i class="fas fa-phone"></i> +919456790079
+                </a>
             </div>
         </section>
     </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Vaishali Sahni. All rights reserved.</p>
+            <div class="scroll-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
